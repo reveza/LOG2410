@@ -29,7 +29,8 @@ Objet3DPart * Objet3DPart::cloner(void) const
 {
 	// Construire et retourner un nouvel objet identique a this
 	// A COMPLETER
-	return nullptr;
+	Objet3DPart* tmp = new Objet3DPart(*this);
+	return tmp;
 }
 
 // Conteneur vide d'enfant pour simplifier l'écriture des methodes
