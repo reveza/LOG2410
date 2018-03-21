@@ -154,7 +154,6 @@
     <ClInclude Include="..\src\Sommet.h" />
     <ClInclude Include="..\src\TP4_Tests.h" />
     <ClInclude Include="..\src\Triangle.h" />
-    <ClInclude Include="..\src\TriangleIterator.h" />
     <ClInclude Include="..\src\TriangleProxyIterator.h" />
   </ItemGroup>
   <ItemGroup>

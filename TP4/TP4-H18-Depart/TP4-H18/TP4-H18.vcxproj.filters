@@ -39,9 +39,6 @@
     <ClInclude Include="..\src\Triangle.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TriangleIterator.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\TriangleProxyIterator.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
