@@ -1,0 +1,26 @@
+Patron Composite:  
+
+1) 
+
+A) Le patron composite est constitué d'un objet d'une classe abstraite (interface commune), un objet composite et un objet simple. L'intention du patron composite illustre le partage de méthodes communes entre l'objet composite et l'objet simple. L'objet composite peut être constitué d'autres objets composites et/ou d'objet simples. À cet effet, le patron composite maximise la flexibilité et l'uniformité du code en utilisant des méthodes virtuelles.  
+
+ 
+
+Composition: objet composite ne peut pas exister sans objet 
+
+Objetcomposite et objetsimple herite d'objet une classe abstraite.  
+
+ 
+
+Patron Proxy: 
+
+1)  
+A) Le patron Proxy vise à cloner un objet dans le but de pouvoir manipuler l'objet tout en y ayant accès. Les manipulations depuis la classe Proxy pourront augmenter ou réduire l'accès à l'objet en question et simplifie une classe qui était au départ plus complexe. Le patron Proxy instaure alors une classe intermédiaire pour manipuler l'objet original. 
+
+ 
+
+Patron Decorator: 
+
+1) 
+
+A) L'intention du patron Decorator est d'ajouter des responsabilités dynamiquement à des objets individuels. Il est utile d'employer ce genre de patron lorsque l'on veut seulement modifier certains objets en particuliers et non leur totalité. Le patron Decorator est particulièrement utile lorsqu'il est impossible de sous-classer (le nombre de sous-classes serait trop élevé par exemple). De ce fait même, le patron Decorator permet d'augmenter la flexibilité tout en simplifiant l'organisation des classes; c'est-à-dire d'éviter de mettre toutes les fonctionnalités dans une classe de base et définir certaines responsabilités qui sont ciblées. 
