@@ -130,7 +130,8 @@ TriangleIterator_const Objet3DTransform::triangle_cbegin() const
 	// Injecte l'objet this comme transformation dans l'iterateur
 	// Retourne le resultat
 	// A COMPLETER
-	return ...;
+	return TriangleProxyIterator_impl<TriangleContainer::const_iterator>((TriangleContainer::const_iterator)m_objet_cible->triangle_cbegin(),
+		(TriangleContainer::const_iterator)m_objet_cible->triangle_cbegin(), this);
 }
 
 TriangleIterator_const Objet3DTransform::triangle_cend() const

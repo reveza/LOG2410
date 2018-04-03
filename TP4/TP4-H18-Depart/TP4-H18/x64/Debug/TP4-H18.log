@@ -1,1 +1,50 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Platforms\x64\PlatformToolsets\v141\Toolset.targets(36,5): error MSB8036: The Windows SDK version 10.0.15063.0 was not found. Install the required version of Windows SDK or change the SDK version in the project property pages or by right-clicking the solution and selecting "Retarget solution".
+﻿  Objet3DComposite.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\xmemory0(856): error C2280: 'std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>::unique_ptr(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': attempting to reference a deleted function
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\memory(2241): note: see declaration of 'std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>::unique_ptr'
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\vector(958): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const _Ty&>(_Alloc &,_Objty *const ,const _Ty &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::unique_ptr<AbsObjet3D,std::default_delete<AbsObjet3D>>>,
+              _Ty=std::unique_ptr<AbsObjet3D,std::default_delete<AbsObjet3D>>,
+              _Objty=std::unique_ptr<AbsObjet3D,std::default_delete<AbsObjet3D>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\vector(958): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const _Ty&>(_Alloc &,_Objty *const ,const _Ty &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::unique_ptr<AbsObjet3D,std::default_delete<AbsObjet3D>>>,
+              _Ty=std::unique_ptr<AbsObjet3D,std::default_delete<AbsObjet3D>>,
+              _Objty=std::unique_ptr<AbsObjet3D,std::default_delete<AbsObjet3D>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\vector(981): note: see reference to function template instantiation 'void std::vector<std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::emplace_back<const std::unique_ptr<_Ty,std::default_delete<_Ty>>&>(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)' being compiled
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\vector(980): note: while compiling class template member function 'void std::vector<std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::push_back(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)'
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
+  c:\users\bernard\desktop\log2410\tp4\tp4-h18-depart\src\objet3dcomposite.cpp(65): note: see reference to function template instantiation 'void std::vector<std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::push_back(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)' being compiled
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
+  c:\users\bernard\desktop\log2410\tp4\tp4-h18-depart\src\objet3diterator.h(20): note: see reference to class template instantiation 'std::vector<std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>' being compiled
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.11.25503\include\memory(2241): note: 'std::unique_ptr<AbsObjet3D,std::default_delete<_Ty>>::unique_ptr(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': function was explicitly deleted
+          with
+          [
+              _Ty=AbsObjet3D
+          ]
