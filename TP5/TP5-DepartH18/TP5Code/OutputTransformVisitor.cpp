@@ -8,15 +8,15 @@ void OutputTransformVisitor::visit(Objet3DPart & obj)
 	// Meme methode que OutputVisitor::visit(Objet3DPart& obj)
 	int index = 0;
 
-	for (auto i = obj.triangle_cbegin(); i != obj.triangle_cend(); i++, index++)
+	for (auto it = obj.triangle_cbegin(); it != obj.triangle_cend(); it++, index++)
 	{
 		m_stream << m_indent << "T" << index;
 		m_stream << ":";
-		m_stream << i->s1();
+		m_stream << it->s1();
 		m_stream << " | ";
-		m_stream << i->s2();
+		m_stream << it->s2();
 		m_stream << " | ";
-		m_stream << i->s3() << std::endl;
+		m_stream << it->s3() << std::endl;
 	}
 }
 

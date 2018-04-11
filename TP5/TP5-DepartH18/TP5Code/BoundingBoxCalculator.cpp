@@ -25,12 +25,12 @@ void BoundingBoxCalculator::visit(Objet3DPart & obj)
 	//         - stoker la nouvelle coordonnee min
 	//    - Si une coordonnee est plus grande qu'une coordonnee max, faire:
 	//         - stoker la nouvelle coordonnee max
-	for (auto i = obj.triangle_cbegin(); i != obj.triangle_cend(); i++)
+	for (auto it = obj.triangle_cbegin(); it != obj.triangle_cend(); it++)
 	{
-		auto sommets = i->sommets();
-		for (int j = 0; j < 3; j++)
+		auto sommets = it->sommets();
+		for (int i = 0; i < 3; i++)
 		{
-			auto coords = sommets[j].coords();
+			auto coords = sommets[i].coords();
 			// x 
 			if (coords[0] < m_boite[0])
 				m_boite[0] = coords[0];
