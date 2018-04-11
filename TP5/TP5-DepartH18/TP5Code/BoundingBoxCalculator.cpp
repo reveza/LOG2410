@@ -10,8 +10,8 @@ BoundingBoxCalculator::BoundingBoxCalculator(void)
 	m_boite[0] = std::numeric_limits<float>::max();  // xmin
 	m_boite[2] = std::numeric_limits<float>::max();  // ymin
 	m_boite[4] = std::numeric_limits<float>::max();  // zmin
-													 // initialiser les bornes maximum aux plus petites valeurs possibles
-													 // le float minimum est: std::numeric_limits<float>::min();
+	// initialiser les bornes maximum aux plus petites valeurs possibles
+	// le float minimum est: std::numeric_limits<float>::min();
 	m_boite[1] = std::numeric_limits<float>::min();  // xmax
 	m_boite[3] = std::numeric_limits<float>::min();  // ymax
 	m_boite[5] = std::numeric_limits<float>::min();  // zmax
@@ -31,17 +31,14 @@ void BoundingBoxCalculator::visit(Objet3DPart & obj)
 		for (int i = 0; i < 3; i++)
 		{
 			auto coords = sommets[i].coords();
-			// x 
 			if (coords[0] < m_boite[0])
 				m_boite[0] = coords[0];
 			else if (coords[0] > m_boite[1])
 				m_boite[1] = coords[0];
-			// y
 			if (coords[1] < m_boite[2])
 				m_boite[2] = coords[1];
 			else if (coords[1] > m_boite[3])
 				m_boite[3] = coords[1];
-			// z
 			if (coords[2] < m_boite[4])
 				m_boite[4] = coords[2];
 			else if (coords[2] > m_boite[5])
